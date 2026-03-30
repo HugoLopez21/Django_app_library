@@ -1,1 +1,3 @@
 # Django_app_library
+
+Biblioweb v2.0 is a dynamic management system for library cards developed with Django and AJAX to ensure a seamless, single-page user experience. The application features a secure, time-sensitive Login/Logout toggle that controls access to its two main modules: an ID card visualizer that retrieves and sorts member data from a JSON file, and a user registration form equipped with a custom JavaScript DNI generator. Technical highlights include real-time server-side validation to prevent duplicate entries, an automated five-minute lockout for repeated registration errors, and a dedicated feedback area to display session alerts and system results dynamically.
