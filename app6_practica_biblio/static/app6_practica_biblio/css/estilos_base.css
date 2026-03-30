@@ -1,0 +1,157 @@
+:root{
+    --principal-fondo:  #182a34;
+    --texto: #f1f8fa;
+    --texto2: #182a34; 
+    --alternante1: #bddde4;
+    --alternante2: #84becd;
+    --color-verde: #2ecc71
+}
+
+html, body {
+    margin: 0;
+    height: 100%; 
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    color: var(--texto2);
+}
+
+.titulo{
+    position: sticky;
+    top: 0;
+    background: var(--principal-fondo);
+    color: var(--texto);
+    text-align: center;
+}
+
+
+
+.titulo h1{
+    padding: 15px;
+    margin: 0;
+}
+
+.contenedor{
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    color: var(--texto2);
+}
+
+.contenido{
+    background-color: var(--alternante2);
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.mid{
+    background-color: var(--alternante1);
+    overflow-x: auto;
+}
+
+.btn{
+    width: 150px;
+    height: 70px;
+    border-radius: 25px;
+    border: none;
+    transition: 0.2s ease;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.login{
+    background-color: var(--color-verde);
+    color: white;
+}
+
+.btn:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 9px var(--principal-fondo);
+}
+
+.botones-contIzq{
+    margin: 100px auto;
+    display: grid;
+    gap: 20px;
+}
+
+#botonesLogin{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dar-alta:hover{
+    background-color: var(--color-verde);
+    color: white;
+}
+
+/*DESPLEGABLE DE SOCIOS*/
+
+#desplegable_visualizar {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    width: 90%;
+    max-width: 450px; 
+    margin: 20px auto; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor de Formulario para seleccionar un socio */
+#form-socios {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Estilo para el selector de socios*/
+#socio {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid var(--principal-fondo);
+    border-radius: 5px;
+    background-color: white;
+    color: var(--texto2);
+    font-size: 15px;
+}
+
+/* Botón "Mostrar ID" dentro de form-socios */
+#form-socios .btn {
+    width: auto;
+    height: auto;
+    padding: 10px 15px;
+    min-width: 100px;
+    background-color: var(--color-verde);
+    color: white;
+    font-size: 14px;
+}
+
+/* Botón "Mostrar todos" */
+#desplegable_visualizar form:nth-child(2) .btn {
+    width: auto;
+    height: auto;
+    padding: 10px 15px;
+    min-width: 100px;
+    background-color: var(--color-verde); 
+    color: white;
+    font-size: 14px;
+}
+
+#contenedor-der h2{
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+

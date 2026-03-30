@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioweb 2.0</title>
+    <link rel="stylesheet" href="{% static 'app6_practica_biblio/css/estilos_base.css' %}">
+    <link rel="stylesheet" href="{% static 'app6_practica_biblio/css/carnets.css' %}">
+    <link rel="stylesheet" href="{% static 'app6_practica_biblio/css/formularios.css' %}">
+</head>
+<body>
+   <div class="titulo">
+        <h1>Hugo López Valladares Biblioweb 2.0</h1>
+   </div> 
+   <div class="contenedor">
+        <div class="contenido izq">
+            <div class="botones-contIzq">
+                <button id="botonLogin" name="button" class="btn login" onclick="sesionLogin()">LOGIN</button>
+                <div id="botonesLogin">
+                    <button id="visualiza" name="button" class="btn" onclick="activaDesactivaVisua()" disabled>Visualizar datos</button>
+                    <button  id="alta" name="button" class="btn" onclick= "activaDesactivaForm()" disabled>Formulario alta</button>
+                </div>
+            </div>
+        </div>
+        <div id='contenedor-mid' class="contenido mid"><h3>Contenido form</h3>
+            <div id="formulario" style="display: none;">
+                <form id="form-alta" method="post" action="{% url 'app6_practica_biblio:recibir_formulario_alta' %}">
+                    {% csrf_token %}
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required><br><br>
+                    
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" required><br><br>
+
+                    <label for="dni">DNI:</label>
+                    <input type="text" id="dni" value="" name="dni" required><br><br>
+
+                    <label for="fecha-nac">Fecha de nacimiento:</label>
+                    <input type="date" id="fecha-nac" name="fecha-nac" required><br><br>
+                    
+                    <button id="btn-dni" type="button" class="btn dni">Genera DNI</button>
+                    <input type="submit" class="btn dar-alta" value="Dar de Alta">
+                </form>
+            </div>
+            
+            <div id="desplegable_visualizar" style="display: none;">
+                <form id="form-socios">
+                    <select id="socio" name="socio">
+                        <option value="">Seleccionar socio</option>
+                        <option value="30802841J">Lucía Caminos Limón</option>
+                        <option value="20802545H">Hugo López Valladares</option>
+                        <option value="30331549R">Rodrigo Álvarez Muñoz</option>
+                    </select>
+                    <input type="button" value="Mostrar ID" class="btn" onclick="mostrarSocioSelec()">
+                </form>
+                <form>
+                    <input type="button" value="Mostrar todos" class="btn" onclick="mostrarSocios()">
+                    <label>
+                        <input type="radio" name="orden" value="asc" checked>
+                        A - Z
+                    </label>
+                    <label>
+                        <input type="radio" name="orden" value="desc">
+                        Z - A
+                    </label>
+                </form>
+            </div>
+        </div>
+        <div id='contenedor-der' class="contenido">
+            <h3>Contenido visualizacion</h3>
+            <div id="contenedor-carnets" class="der"></div>
+        </div>
+    </div>
+    <script src="{% static 'app6_practica_biblio/js/contLogin.js' %}"></script>
+    <script src="{% static 'app6_practica_biblio/js/contForm.js' %}"></script>
+</body>
+</html>

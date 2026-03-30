@@ -1,0 +1,67 @@
+{
+	"socios": [
+		{
+			"nombre": "Luc\u00eda",
+			"apellidos": "Caminos Lim\u00f3n",
+			"fecha_nacimiento": "2005-12-11",
+			"dni": "30802841J",
+			"foto": "/static/app6_practica_biblio/img/443021.png"
+		},
+		{
+			"nombre": "Hugo",
+			"apellidos": "L\u00f3pez Valladares",
+			"fecha_nacimiento": "2023-23-08",
+			"dni": "20802545H",
+			"foto": "/static/app6_practica_biblio/img/443021.png"
+		},
+		{
+			"nombre": "Rodrigo",
+			"apellidos": "Alvarez Mu\u00f1oz",
+			"fecha_nacimiento": "2015-02-07",
+			"dni": "30331549R",
+			"foto": "/static/app6_practica_biblio/img/443021.png"
+		},
+		{
+			"nombre": "Joselico",
+			"apellidos": "Gonsalez lopez",
+			"fecha_nacimiento": "2025-12-10",
+			"dni": "56106952Q",
+			"foto": "/static/app6_practica_biblio/img/443021.png"
+		},
+		{
+			"nombre": "Hugo",
+			"apellidos": "L\u00f3pez Valladares",
+			"fecha_nacimiento": "2025-12-10",
+			"dni": "92172979L",
+			"foto": "/static/app6_practica_biblio/img/443021.png"
+		},
+		{
+			"nombre": "Joselico",
+			"apellidos": "Gonsalez lopez",
+			"fecha_nacimiento": "2025-12-10",
+			"dni": "59728574N",
+			"foto": "/static/app6_practica_biblio/img/443021.png"
+		},
+		{
+			"nombre": "Juanjo",
+			"apellidos": "Jamones",
+			"fecha_nacimiento": "2025-12-11",
+			"dni": "63211960W",
+			"foto": "/static/app6_practica_biblio/img/443021.png"
+		},
+		{
+			"nombre": "Charlie",
+			"apellidos": "Kirk",
+			"fecha_nacimiento": "2025-12-19",
+			"dni": "56285993W",
+			"foto": "/static/app6_practica_biblio/img/443021.png"
+		},
+		{
+			"nombre": "Critina",
+			"apellidos": "Lopez",
+			"fecha_nacimiento": "2025-12-12",
+			"dni": "12905112L",
+			"foto": "/static/app6_practica_biblio/img/443021.png"
+		}
+	]
+}
